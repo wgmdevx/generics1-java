@@ -2,14 +2,15 @@ package service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class PrintService {
-    private List<Integer> list = new ArrayList<>();
+    private List<Object> list = new ArrayList<>();
 
     public PrintService() {
     }
 
-    public List<Integer> getList() {
+    public List<Object> getList() {
         return list;
     }
 
@@ -17,7 +18,7 @@ public class PrintService {
         list.add(value);
     }
 
-    public Integer first(){
+    public Object first(){
         if(list.isEmpty()) {
             throw new IllegalStateException("List is empty");
         }
