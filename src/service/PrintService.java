@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class PrintService {
-    private List<Object> list = new ArrayList<>();
+public class PrintService<T> {
+    private List<T> list = new ArrayList<>();
 
     public PrintService() {
     }
 
-    public List<Object> getList() {
+    public List<T> getList() {
         return list;
     }
 
-    public void addValue(Object value) {
+    public void addValue(T value) {
         list.add(value);
     }
 
-    public Object first(){
+    public T first(){
         if(list.isEmpty()) {
             throw new IllegalStateException("List is empty");
         }
