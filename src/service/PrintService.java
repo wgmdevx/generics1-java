@@ -14,7 +14,7 @@ public class PrintService {
         return list;
     }
 
-    public void addValue(Integer value) {
+    public void addValue(Object value) {
         list.add(value);
     }
 
